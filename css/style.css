@@ -1,57 +1,78 @@
-body {
-  font-family: Arial, Helvetica, sans-serif;
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #000000;
 }
 
 header {
-  background-color: #1c4c9a;
-  color: white;
+  background-color: #ffffff;
   padding: 20px;
   text-align: center;
   align-items: center;
   display: flex;
-  justify-content: center;
-  height: 30px;
+  border-bottom: 1px solid #222;
+  z-index: 10;
+}
+.logo {
+  position: absolute;
+  left: 10px;
+  width: 70px;
+  height: 70px;
 }
 
+.logo-bg {
+  background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeg2CpdNm5O6cvYMlbxJ_82Q66KuqcO5G6dw&s') no-repeat center/contain;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
 nav {
-  background-color: #f6cc48;
+  background-color: #ffffff;
   padding: 10px;
   text-align: center;
 }
 
 nav a {
-  color: rgb(14, 11, 204);
+  color: rgb(71, 70, 105);
   text-decoration: none;
   margin: 10px;
-}
-main {
-  padding: 20px;
+  text-transform: uppercase;
 }
 
 section {
-  margin-bottom: 30px;
-  padding: 15px;
-  border: 1px solid#ccc;
+  padding: 40px 70px;
 }
 
-footer {
-  background-color: #222;
+.hero {
   color: white;
   text-align: center;
-  padding: 15px;
+  padding: 50px 20px;
 }
-.title {
-  color: white;
-  text-decoration: none;
+.hero-bg {
+  background: url('https://cdn.unasp.br/unasp-noticias/2024/10/22120308/semana_colportagem-1024x682.jpg') no-repeat center/cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
 }
-.whatsapp {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
 }
-.whatsapp img {
-  width: 50px;
-  border-radius: 50%;
+
+.content {
+  position: relative;
+  z-index: 1;
+  padding: 
 }
