@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -11,7 +15,7 @@ body {
 
 header {
   background-color: #f8f7f7d5;
-  padding: 20px;
+  padding: 25px;
   text-align: center;
   align-items: center;
   display: flex;
@@ -38,8 +42,12 @@ header {
   height: 100%;
   border-radius: 50%;
 }
+
+.logo-bg:hover {
+transform: scale(1.05);
+transition:(0.3s);
+}
 nav {
-  background-color: #fafafa00;
   padding-top: 10px;
   position: fixed;
   width: 100%;
@@ -49,10 +57,17 @@ nav {
 
 nav a {
   color: rgb(71, 70, 105);
-  text-decoration: none;
   margin: 10px;
   text-transform: uppercase;
   text-align: center;
+  text-decoration: none;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+nav a:hover {
+  background: rgb(121, 38, 38);
+  color: white;
 }
 
 section {
@@ -89,12 +104,18 @@ section {
   z-index: 1;
   padding: 20px;
   font-family: "Special Gothic Expanded One", sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   font-style: normal;
   transform: uppercase;
   display: grid;
   place-items: center;
   height: 100vh;
+}
+
+.content h1 {
+  font-size: 90px;
+  font-family: 'Bebas Neue', sans-serif;
+
 }
 .ouro {
   color: gold;
