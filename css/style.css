@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&display=swap");
 
 * {
   margin: 0;
@@ -44,8 +44,8 @@ header {
 }
 
 .logo-bg:hover {
-transform: scale(1.05);
-transition:(0.3s);
+  transform: scale(1.05);
+  transition: (0.3s);
 }
 nav {
   padding-top: 10px;
@@ -114,8 +114,7 @@ section {
 
 .content h1 {
   font-size: 90px;
-  font-family: 'Bebas Neue', sans-serif;
-
+  font-family: "Bebas Neue", sans-serif;
 }
 .ouro {
   color: gold;
@@ -134,4 +133,17 @@ section {
       0 0 30px gold,
       0 0 40px gold;
   }
+}
+.sobre {
+  position: relative;
+}
+.sobre-bg {
+  background: url("https://cdn.unasp.br/unasp-noticias/2025/05/28135909/colportagem_1.jpg")
+    no-repeat center/cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
 }
